@@ -16,16 +16,18 @@
 #include <fstream>
 
 class ElfMostCalories{
-    unsigned int max_calories = 0;
+
 public:
+    //Part 1
     int GetMostCalories(){
+        int max_calories = 0;
         std::ifstream calories_file;
         calories_file.open("Calories Day 1.txt");
         if(!calories_file.is_open())
             std::cout << "file did not open" << std::endl;
 
         std::string calories_str;
-        unsigned int calorie_count = 0;
+        int calorie_count = 0;
         std::getline(calories_file,calories_str);
 
         while (calories_file){
@@ -42,6 +44,49 @@ public:
 
         calories_file.close();
         return max_calories;
+    }
+
+    int SortTopThree(int calorie_count, int top_three[]){
+        if(calorie_count > top_three[0]){
+            top_three[2] = top_three[1];
+            top_three[1] = top_three[0];
+            top_three[0] = calorie_count;
+        }else if(calorie_count > top_three[1]){
+            top_three[2] = top_three[1];
+            top_three[1] = calorie_count;
+        }else if(calorie_count > top_three[2])
+            top_three[2] = calorie_count;
+        return top_three[0]+top_three[1]+top_three[2];
+    }
+
+    //Part 2
+    int GetTopThree(){
+        int top_three[3]={0};
+        int max_calories = 0;
+
+        std::ifstream calories_file;
+        calories_file.open("Calories Day 1.txt");
+        if(!calories_file.is_open())
+            std::cout << "file did not open" << std::endl;
+
+        std::string calories_str;
+        unsigned int calorie_count = 0;
+        std::getline(calories_file,calories_str);
+
+        while (calories_file){
+            if(calories_str.empty()){
+                max_calories = SortTopThree(calorie_count, top_three);
+                calorie_count = 0;
+                std::getline(calories_file,calories_str);
+                continue;
+            }
+            calorie_count += stoi(calories_str);
+            std::getline(calories_file,calories_str);
+        }
+
+        calories_file.close();
+        return max_calories;
+
     }
 };
 

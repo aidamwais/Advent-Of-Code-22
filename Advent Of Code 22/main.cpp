@@ -4,7 +4,7 @@
 int main() {
     //DAY 1
     ElfMostCalories result;
-    std::cout << result.GetMostCalories() << std::endl;
+    std::cout << result.GetTopThree() << std::endl;
 
     return 0;
 }
