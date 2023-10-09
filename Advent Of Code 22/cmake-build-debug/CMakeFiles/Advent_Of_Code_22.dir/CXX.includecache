@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Aida Mwais/CLionProjects/Advent Of Code 22/Day 1.hpp
+string.h
+-
+iostream
+-
+fstream
+-
+
+C:/Users/Aida Mwais/CLionProjects/Advent Of Code 22/main.cpp
+iostream
+-
+Day 1.hpp
+C:/Users/Aida Mwais/CLionProjects/Advent Of Code 22/Day 1.hpp
+
