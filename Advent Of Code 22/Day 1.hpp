@@ -41,17 +41,20 @@ public:
                 if(max_calories < calorie_count)
                     max_calories = calorie_count;
                 calorie_count = 0;
-                std::getline(calories_file,calories_str);
-                continue;
             }
-            calorie_count += stoi(calories_str);
-            std::getline(calories_file,calories_str);
+            else{
+                calorie_count += stoi(calories_str);
+            }
+
+            std::getline(calories_file, calories_str);
         }
 
         calories_file.close();
         return max_calories;
     }
 
+
+    //Part 2
     int SortTopThree(int calorie_count, int top_three[]){
         if(calorie_count > top_three[0]){
             top_three[2] = top_three[1];
@@ -65,7 +68,6 @@ public:
         return top_three[0]+top_three[1]+top_three[2];
     }
 
-    //Part 2
     int GetTopThree(){
         int top_three[3]={0};
         int max_calories = 0;
@@ -83,10 +85,10 @@ public:
             if(calories_str.empty()){
                 max_calories = SortTopThree(calorie_count, top_three);
                 calorie_count = 0;
-                std::getline(calories_file,calories_str);
-                continue;
             }
-            calorie_count += stoi(calories_str);
+            else {
+                calorie_count += stoi(calories_str);
+            }
             std::getline(calories_file,calories_str);
         }
 

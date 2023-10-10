@@ -14,9 +14,19 @@ iostream
 fstream
 -
 
+C:/Users/Aida Mwais/CLionProjects/Advent Of Code 22/Day 2.hpp
+string.h
+-
+iostream
+-
+fstream
+-
+
 C:/Users/Aida Mwais/CLionProjects/Advent Of Code 22/main.cpp
 iostream
 -
 Day 1.hpp
 C:/Users/Aida Mwais/CLionProjects/Advent Of Code 22/Day 1.hpp
+Day 2.hpp
+C:/Users/Aida Mwais/CLionProjects/Advent Of Code 22/Day 2.hpp
 
