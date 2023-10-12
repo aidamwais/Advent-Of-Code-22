@@ -29,7 +29,13 @@ iostream
 -
 fstream
 -
-array
+
+C:/Users/Aida Mwais/CLionProjects/Advent Of Code 22/Day 4.hpp
+string.h
+-
+iostream
+-
+fstream
 -
 
 C:/Users/Aida Mwais/CLionProjects/Advent Of Code 22/main.cpp
@@ -41,4 +47,6 @@ Day 2.hpp
 C:/Users/Aida Mwais/CLionProjects/Advent Of Code 22/Day 2.hpp
 Day 3.hpp
 C:/Users/Aida Mwais/CLionProjects/Advent Of Code 22/Day 3.hpp
+Day 4.hpp
+C:/Users/Aida Mwais/CLionProjects/Advent Of Code 22/Day 4.hpp
 

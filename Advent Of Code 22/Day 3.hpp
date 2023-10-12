@@ -7,7 +7,6 @@
 #include <string.h>
 #include <iostream>
 #include <fstream>
-#include <array>
 
 #define LETTERS 26
 #define ERR -1
