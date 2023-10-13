@@ -28,7 +28,7 @@ int main() {
 
     //DAY 5
     CratesStacks CrateOrder;
-    std::cout << "Day 5, Part 1:" << CrateOrder.FinalOrder() << std::endl;
-    std::cout << "Day 5, Part 2:" << CrateOrder.FinalOrderCrateMover9001() << std::endl;
+    std::cout << "Day 5, Part 1:" << CrateOrder.FinalOrderCrateMover9000() << std::endl;
+    std::cout << "Day 5, Part 2:" << CrateOrder.FinalOrderCrateMover9001() << std::endl << std::endl;
     return 0;
 }
