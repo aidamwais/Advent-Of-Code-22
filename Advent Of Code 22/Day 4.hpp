@@ -63,7 +63,6 @@ public:
                 ((first_range[0] <= second_range[0]) && (second_range[0] <= first_range[1]) && (first_range[1] <= second_range[1])) ||
                 ((second_range[0] <= first_range[0]) && (first_range[0] <= second_range[1]) && (second_range[1] <= first_range[1] )) );
     }
-
     int CalculateOverlaps(){
         std::ifstream assignment;
         //file.txt is in cmake-debug dir

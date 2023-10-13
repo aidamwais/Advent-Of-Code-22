@@ -3,6 +3,7 @@
 #include "Day 2.hpp"
 #include "Day 3.hpp"
 #include "Day 4.hpp"
+#include "Day 5.hpp"
 
 int main() {
     //DAY 1
@@ -23,6 +24,11 @@ int main() {
     //DAY 4
     CampCleanup Intersections;
     std::cout << "Day 4, Part 1:" <<Intersections.CalculateInclusionAssignments() << std::endl;
-    std::cout << "Day 4, Part 1:" <<Intersections.CalculateOverlaps() << std::endl;
+    std::cout << "Day 4, Part 1:" <<Intersections.CalculateOverlaps() << std::endl << std::endl;
+
+    //DAY 5
+    CratesStacks CrateOrder;
+    std::cout << "Day 5, Part 1:" << CrateOrder.FinalOrder() << std::endl;
+    std::cout << "Day 5, Part 2:" << CrateOrder.FinalOrderCrateMover9001() << std::endl;
     return 0;
 }
