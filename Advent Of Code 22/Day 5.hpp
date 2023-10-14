@@ -59,7 +59,6 @@ public:
 
 };
 
-
 class CratesStacks{
 public:
     int GetNumberOfStacks(){
@@ -84,8 +83,8 @@ public:
     void GetStacks(Stacks& stacks, std::ifstream& arrangement_list) {
         std::string line;
         std::getline(arrangement_list, line);
-        //every crate annotation includes 3 chars ( '[''C'']') and a ' ' between them, we use that to get the number of
-        //stacks and to insert the crates in the correct stack.
+        //every crate annotation includes 3 chars ( '[''C'']') and a ' ' between them, which means 4 chars per crate.
+        //we use that to get the number of stacks and to insert the crates in the correct stack.
         while(!line.empty()) {
             for (int i = 0; i < line.length(); i++) {
                 if (line[i] == '[') {
@@ -107,8 +106,8 @@ public:
         //after 'to'
         *to_stack = stoi(helper) - 1;
     }
-    //PART 1
-    std::string FinalOrderCrateMover9000(){
+    //PART 1 & 2 (Part 1 with reverse = false, and Part 2 with reverse = true)
+    std::string FinalOrderCrateMover(bool reverse){
         int stacks_number = GetNumberOfStacks();
 
         std::ifstream arrangement_list;
@@ -126,35 +125,7 @@ public:
         while(arrangement_list) {
             int quantity, from_stack, to_stack;
             GetParams(move,&quantity, &from_stack,&to_stack);
-            stacks.MoveCrates(from_stack,to_stack,quantity,false);
-            std::getline(arrangement_list,move);
-        }
-
-        arrangement_list.close();
-        return stacks.GetFinalOrder();
-    }
-
-    //PART 2
-    std::string FinalOrderCrateMover9001(){
-        int stacks_number = GetNumberOfStacks();
-
-        std::ifstream arrangement_list;
-        //file.txt is in cmake-debug dir
-        arrangement_list.open("Crate Arrangement Day 5.txt");
-        if(!arrangement_list.is_open())
-            std::cout << "File did not open" << std::endl;
-
-        Stacks stacks(stacks_number);
-        GetStacks(stacks,arrangement_list);
-
-        std::string move;
-        std::getline(arrangement_list,move);
-
-        while(arrangement_list) {
-            int quantity, from_stack, to_stack;
-            std::string target_char;
-            GetParams(move,&quantity, &from_stack,&to_stack);
-            stacks.MoveCrates(from_stack,to_stack,quantity,true);
+            stacks.MoveCrates(from_stack,to_stack,quantity,reverse);
             std::getline(arrangement_list,move);
         }
 

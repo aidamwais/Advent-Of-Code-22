@@ -4,6 +4,7 @@
 #include "Day 3.hpp"
 #include "Day 4.hpp"
 #include "Day 5.hpp"
+#include "Day 6.hpp"
 
 int main() {
     //DAY 1
@@ -24,11 +25,16 @@ int main() {
     //DAY 4
     CampCleanup Intersections;
     std::cout << "Day 4, Part 1:" <<Intersections.CalculateInclusionAssignments() << std::endl;
-    std::cout << "Day 4, Part 1:" <<Intersections.CalculateOverlaps() << std::endl << std::endl;
+    std::cout << "Day 4, Part 2:" <<Intersections.CalculateOverlaps() << std::endl << std::endl;
 
     //DAY 5
     CratesStacks CrateOrder;
-    std::cout << "Day 5, Part 1:" << CrateOrder.FinalOrderCrateMover9000() << std::endl;
-    std::cout << "Day 5, Part 2:" << CrateOrder.FinalOrderCrateMover9001() << std::endl << std::endl;
+    std::cout << "Day 5, Part 1:" << CrateOrder.FinalOrderCrateMover(false) << std::endl;
+    std::cout << "Day 5, Part 2:" << CrateOrder.FinalOrderCrateMover(true) << std::endl << std::endl;
+
+    //DAY 6
+    StartOfPacket MarkerIndex;
+    std::cout << "Day 6, Part 1:" <<MarkerIndex.GetIndexOfStartMarker(MARKER_SIZE) << std::endl;
+    std::cout << "Day 6, Part 2:" <<MarkerIndex.GetIndexOfStartMarker(MESSAGE_SIZE) << std::endl << std::endl;
     return 0;
 }

@@ -50,6 +50,18 @@ list
 algorithm
 -
 
+C:/Users/Aida Mwais/CLionProjects/Advent Of Code 22/Day 6.hpp
+string.h
+-
+iostream
+-
+fstream
+-
+list
+-
+algorithm
+-
+
 C:/Users/Aida Mwais/CLionProjects/Advent Of Code 22/main.cpp
 iostream
 -
@@ -63,4 +75,6 @@ Day 4.hpp
 C:/Users/Aida Mwais/CLionProjects/Advent Of Code 22/Day 4.hpp
 Day 5.hpp
 C:/Users/Aida Mwais/CLionProjects/Advent Of Code 22/Day 5.hpp
+Day 6.hpp
+C:/Users/Aida Mwais/CLionProjects/Advent Of Code 22/Day 6.hpp
 
