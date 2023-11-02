@@ -7,5 +7,8 @@ CMakeFiles/Advent_Of_Code_22.dir/main.cpp.obj: ../Day\ 3.hpp
 CMakeFiles/Advent_Of_Code_22.dir/main.cpp.obj: ../Day\ 4.hpp
 CMakeFiles/Advent_Of_Code_22.dir/main.cpp.obj: ../Day\ 5.hpp
 CMakeFiles/Advent_Of_Code_22.dir/main.cpp.obj: ../Day\ 6.hpp
+CMakeFiles/Advent_Of_Code_22.dir/main.cpp.obj: ../Day\ 7.hpp
+CMakeFiles/Advent_Of_Code_22.dir/main.cpp.obj: ../Day\ 8.hpp
+CMakeFiles/Advent_Of_Code_22.dir/main.cpp.obj: ../Day\ 9.hpp
 CMakeFiles/Advent_Of_Code_22.dir/main.cpp.obj: ../main.cpp
 
