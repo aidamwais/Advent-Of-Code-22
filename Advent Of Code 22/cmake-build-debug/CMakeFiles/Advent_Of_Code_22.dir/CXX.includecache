@@ -14,6 +14,18 @@ iostream
 fstream
 -
 
+C:/Users/Aida Mwais/CLionProjects/Advent Of Code 22/Day 10.hpp
+string.h
+-
+iostream
+-
+fstream
+-
+list
+-
+algorithm
+-
+
 C:/Users/Aida Mwais/CLionProjects/Advent Of Code 22/Day 2.hpp
 string.h
 -
@@ -119,4 +131,6 @@ Day 8.hpp
 C:/Users/Aida Mwais/CLionProjects/Advent Of Code 22/Day 8.hpp
 Day 9.hpp
 C:/Users/Aida Mwais/CLionProjects/Advent Of Code 22/Day 9.hpp
+Day 10.hpp
+C:/Users/Aida Mwais/CLionProjects/Advent Of Code 22/Day 10.hpp
 

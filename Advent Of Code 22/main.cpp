@@ -8,6 +8,7 @@
 #include "Day 7.hpp"
 #include "Day 8.hpp"
 #include "Day 9.hpp"
+#include "Day 10.hpp"
 
 int main() {
 //    //DAY 1
@@ -49,10 +50,14 @@ int main() {
 //    TreesGrid visibleTrees;
 //    std::cout << "Day 8, Part 1:" << visibleTrees.NumVisibleTrees() << std::endl;
 //    std::cout << "Day 8, Part 2:" << visibleTrees.HighestScenicScore() << std::endl<< std::endl;
+//
+//    //DAY 9
+//    RopeMotions Rope;
+//    std::cout << "Day 9, Part 1:" << Rope.ShortNumOfPositionsTailVisits() << std::endl;
+//    std::cout << "Day 9, Part 2:" << Rope.LongNumOfPositionsTailVisits() << std::endl<< std::endl;
 
-    //DAY 9
-    RopeMotions Rope;
-    //std::cout << "Day 9, Part 1:" << Rope.ShortNumOfPositionsTailVisits() << std::endl;
-    std::cout << "Day 9, Part 2:" << Rope.LongNumOfPositionsTailVisits() << std::endl<< std::endl;
+    //DAY 10
+    Device device;
+    std::cout << "Day 10, Part 1 & 2:" << device.SumSignalStrength() << std::endl;
     return 0;
 }
